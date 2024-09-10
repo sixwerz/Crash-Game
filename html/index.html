@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Loot Money</title>
+</head>
+<body>
+    <header>
+        <div class="header_wrapper">
+            <div class="header-left">
+                <div class="logo">Loot Money</div>
+
+                <nav class="menu">
+                    
+                    <a class="menu-button" href="#">
+                        <img src="../img/crashIcon.png" alt="Crash Button">
+                    </a>
+
+                    <a class="menu-button" href="#">
+                        <img src="../img/lottery.png" alt="Double Button">
+                    </a>
+
+                    <a class="menu-button" href="#">
+                        <img src="../img/caseIcon.png" alt="Case Button">
+                    </a>
+                </nav>
+            </div>
+
+            <div class="header-right">
+                    <button data-balance="0" data-after-balance="$" class="balance-button"></button>
+                <div class="profile">
+                    <img class="profile-icon" src="../img/user.png" alt="userImg">
+                    <p>Admin</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main_wrapper">
+            <div class="crash-game">
+                <div class="menu-left">
+                    <div class="crash-top">
+                        <h1 class="crash-title">Crash</h1>
+                        <div class="crash-money" data-money="0"></div>
+                    </div>
+
+                    <div class="auto-win">
+                        <p class="info-text">Автовывод</p>
+                        <input  class="input-text" value="1.2" type="number" autocomplete="off" formcontrolname="ratio">
+                        <button id="btn1" class="input-button active">1.2X</button>
+                        <button id="btn2" class="input-button">1.5x</button>
+                        <button id="btn3" class="input-button">2x</button>
+                        <button id="btn4" class="input-button">2.5x</button>
+                    </div>
+
+                    <div class="stavka">
+                        <p class="info-text">Введите сумму</p>
+                        <input class="input-value" value="52" type="number" autocomplete="off" formcontrolname="ratio">
+                    </div>
+
+                    <div class="buttons">
+                        <button class="start-button">Сделать ставку</button>
+                        <button class="ingame-start-button">Вывести</button>
+                        <button class="noingame-start-button">Идет игра</button>
+                        <button class="wait-button">Ожидание</button>
+                    </div>
+                </div>
+                
+                <div class="menu-right">
+                    <div class="crash">
+                        <div class="time" data-after="s" data-value="5"></div>
+                        <p class="info-time">Игра начнется через</p>
+                    </div>
+
+                    <div class="active-players">
+                        <div class="user-game">
+                            <div class="user-profile">
+                                <img class="user-logo" src="../img/user.png" alt="userImg">
+                                <p>Admin</p>
+                            </div>
+
+                            <p class="stavka-money-info">0</p>
+
+                            <p class="stavka-game-info" data-gamex="">В игре</p>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/bots.js"></script>
+</body>
+</html>
